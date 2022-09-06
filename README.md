@@ -1,6 +1,6 @@
 # Wojak's Note
 
-This HashLips repo has been modified to accomodate IMX metadata standards. The original output for the metadata has metadata nested under attributes (opensea standard), however this code modifies the output so that metadata is not nested. 
+This HashLips repo has been modified to accomodate IMX metadata standards. The original output for the metadata has metadata nested under attributes (OpenSea standard), however this code modifies the output so that metadata is not nested. Additionally, some suffixes have been removed from metadata outputs eg 1.json --> 1 to accomodate for token ids. 
 
 
 Other changes
