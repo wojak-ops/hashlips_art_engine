@@ -1,3 +1,21 @@
+# Wojak's Note
+
+This HashLips repo has been modified to accomodate IMX metadata standards. The original output for the metadata has metadata nested under attributes (opensea standard), however this code modifies the output so that metadata is not nested. 
+
+
+Other changes
+-const baseUri in config.js should be set to metadata_api_url 
+eg const baseUri = "https://gateway.pinata.cloud/ipfs/QmZMGeNZUyPAgiARy47V5SUvxEYsKzuVLJA8ruX9V2d9R3"
+
+How to use
+1. Follow HashLips instructions as stated in readme, making note of the following changes
+2. const baseUri should = metadata_api_url
+3. use this same value for metadata_api_url when creating the collection in imx-examples
+4. you will need to add metadata schema manually [Link](https://docs.x.immutable.com/docs/asset-metadata)
+
+To do
+1. Will need to work on removing dna, edition from metadata 
+
 # Welcome to HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
