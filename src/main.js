@@ -27,6 +27,7 @@ const ctx = canvas.getContext("2d");
 ctx.imageSmoothingEnabled = format.smoothing;
 var metadataList = [];
 var attributesList = [];
+var newArr = [];
 var dnaList = new Set();
 const DNA_DELIMITER = "-";
 const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
@@ -138,8 +139,8 @@ const addMetadata = (_dna, _edition) => {
     edition: _edition,
     date: dateTime,
     ...extraMetadata,
-    attributes: attributesList,
-    compiler: "HashLips Art Engine",
+    ...newObject,
+    //compiler: "HashLips Art Engine",
   };
   if (network == NETWORK.sol) {
     tempMetadata = {
@@ -168,8 +169,13 @@ const addMetadata = (_dna, _edition) => {
     };
   }
   metadataList.push(tempMetadata);
-  attributesList = [];
+  newObject = {};
 };
+
+
+
+/*
+newObject = {};
 
 const addAttributes = (_element) => {
   let selectedElement = _element.layer.selectedElement;
@@ -177,7 +183,17 @@ const addAttributes = (_element) => {
     trait_type: _element.layer.name,
     value: selectedElement.name,
   });
+}
+*/
+
+
+newObject = {};
+
+const addAttributes = (_element) => {
+  let selectedElement = _element.layer.selectedElement;
+ newObject[_element.layer.name] = selectedElement.name
 };
+  
 
 const loadLayerImg = async (_layer) => {
   try {
