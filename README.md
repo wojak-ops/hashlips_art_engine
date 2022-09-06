@@ -4,8 +4,10 @@ This HashLips repo has been modified to accomodate IMX metadata standards. The o
 
 
 Other changes
--const baseUri in config.js should be set to metadata_api_url 
-eg const baseUri = "https://gateway.pinata.cloud/ipfs/QmZMGeNZUyPAgiARy47V5SUvxEYsKzuVLJA8ruX9V2d9R3"
+-const baseUri in config.js should be set to metadata_api_url eg
+ ```js
+const baseUri = "https://gateway.pinata.cloud/ipfs/QmZMGeNZUyPAgiARy47V5SUvxEYsKzuVLJA8ruX9V2d9R3"
+```js
 
 How to use
 1. Follow HashLips instructions as stated in readme, making note of the following changes
