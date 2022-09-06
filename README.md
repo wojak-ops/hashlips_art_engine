@@ -16,7 +16,7 @@ const baseUri = "https://gateway.pinata.cloud/ipfs/QmZMGeNZUyPAgiARy47V5SUvxEYsK
 4. You will need to add metadata schema manually [Link](https://docs.x.immutable.com/docs/asset-metadata)
 
 To do
-1. Will need to work on removing dna, edition from metadata 
+1. Need to remove DNA & edition from metadata. This is currently used in the script and can't be commented out. 
 
 # Welcome to HashLips 👄
 
